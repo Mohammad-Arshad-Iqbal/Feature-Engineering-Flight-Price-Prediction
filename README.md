@@ -23,7 +23,7 @@ The dataset `flight_price.xlsx` contains the following features:
 
 The dataset before applying feature engineering looks like this:
 
-![Dataset Screenshot](images/before_feature_engineering.png)
+![Dataset Screenshot](Before.png)
 
 > *Note: This screenshot was taken before any preprocessing or feature transformations.*
 
@@ -90,4 +90,11 @@ encoded = encoder.fit_transform(df[["Airline", "Source", "Destination"]]).toarra
 # Create dataframe with column names
 df1 = pd.DataFrame(encoded, columns=encoder.get_feature_names_out())
 ```
+## 🛠️ Dataset Snapshot (After Feature Engineering)
+
+The dataset after applying feature engineering looks like this:
+
+![Dataset Screenshot](After.png)
+
+> *Note: This screenshot reflects the dataset after performing all necessary transformations such as encoding, handling missing values, and feature extraction.*
 
